@@ -20,7 +20,8 @@ class Program
             catch (FormatException)
             {
                 Console.WriteLine("Invalid input. Please enter a valid number.");
-                continue;  
+                continue; 
+            } 
 
             if (choice == 1)
             {
@@ -101,11 +102,14 @@ class Program
 
             Console.WriteLine("\nWould you like to start again? (Press 'Y' to restart or any other key to exit)");
             string restart = Console.ReadLine().ToLower();
+
             if (restart != "y")
             {
                 break;
             }
 
-        } while (true);
+        }
+        
+             while (true);
     }
 }
