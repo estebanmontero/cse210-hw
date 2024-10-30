@@ -2,8 +2,10 @@ using System;
 
 class Program
 {
+    // Main method to initialize and start the goal management program
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop06 World!");
+        GoalManager goalManager = new GoalManager(); // Create GoalManager instance
+        goalManager.Start(); // Start goal management
     }
 }
